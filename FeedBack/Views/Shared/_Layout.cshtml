@@ -1,0 +1,408 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+
+    <environment include="Development">
+        <!-- start: GOOGLE FONTS -->
+        <link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
+        <!-- end: GOOGLE FONTS -->
+        <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="~/css/site.css" />
+        <link href="~/Fonts/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="~/themify-icons/themify-icons.min.css" rel="stylesheet" @*id="skin_color"*@ />
+        <link href="~/styles.css" rel="stylesheet" />
+        <link href="~/plugins.css" rel="stylesheet" />
+        <link href="~/themes/theme-1.css" rel="stylesheet" />
+    </environment>
+</head>
+<body>
+    <div id="app" class="app-navbar-fixed app-sidebar-fixed app-footer-fixed">
+        <!-- sidebar -->
+        <div class="sidebar app-aside" id="sidebar">
+            <div class="sidebar-container perfect-scrollbar">
+                <nav>
+                    <!-- start: MAIN NAVIGATION MENU -->
+                    <div class="navbar-title">
+                        <span>Main Navigation</span>
+                    </div>
+                    <ul class="main-navigation-menu">
+                        <li class="active open">
+                            <a href="@Url.Action("Index","Home")">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <i class="ti-home"></i>
+                                    </div>
+                                    <div class="item-inner">
+                                        <span class="title"> Dashboard </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="@Url.Action("About","Home")"><div class="item-content"><div class="item-media"><i class="ti-user"></i></div><div class="item-inner"><span class="title"> Users </span></div></div></a></li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <i class="ti-layout-grid2"></i>
+                                    </div>
+                                    <div class="item-inner">
+                                        <span class="title"> Transaction </span><i class="icon-arrow"></i>
+                                    </div>
+                                </div>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="table_basic.html">
+                                        <span class="title">Basic Tables</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="table_responsive.html">
+                                        <span class="title">Responsive Tables</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="table_data.html">
+                                        <span class="title">Advanced Data Tables</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <i class="ti-pencil-alt"></i>
+                                    </div>
+                                    <div class="item-inner">
+                                        <span class="title"> Masters </span><i class="icon-arrow"></i>
+                                    </div>
+                                </div>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="form_elements.html">
+                                        <span class="title">Items Setting</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <i class="ti-file"></i>
+                                    </div>
+                                    <div class="item-inner">
+                                        <span class="title"> Report </span><i class="icon-arrow"></i>
+                                    </div>
+                                </div>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="login_signin.html">
+                                        <span class="title"> Login Form </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="login_registration.html">
+                                        <span class="title"> Registration Form </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="login_forgot.html">
+                                        <span class="title"> Forgot Password Form </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="login_lockscreen.html">
+                                        <span class="title">Lock Screen</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript:void(0)">
+                                <div class="item-content">
+                                    <div class="item-media">
+                                        <i class="ti-package"></i>
+                                    </div>
+                                    <div class="item-inner">
+                                        <span class="title"> Utilities </span><i class="icon-arrow"></i>
+                                    </div>
+                                </div>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="login_signin.html">
+                                        <span class="title"> Backup Database </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="login_registration.html">
+                                        <span class="title"> Error Log </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <!-- end: MAIN NAVIGATION MENU -->
+                </nav>
+            </div>
+        </div>
+        <!-- / sidebar -->
+        <div class="app-content">
+            <!-- start: TOP NAVBAR -->
+            <header class="navbar navbar-default navbar-static-top">
+                <!-- start: NAVBAR HEADER -->
+                <div class="navbar-header">
+                    <a href="#" class="sidebar-mobile-toggler pull-left hidden-md hidden-lg" class="btn btn-navbar sidebar-toggle" data-toggle-class="app-slide-off" data-toggle-target="#app" data-toggle-click-outside="#sidebar">
+                        <i class="ti-align-justify"></i>
+                    </a>
+                    <a class="navbar-brand">
+                        FeedBack
+                    </a>
+                    <a href="#" class="sidebar-toggler pull-right visible-md visible-lg" data-toggle-class="app-sidebar-closed" data-toggle-target="#app">
+                        <i class="ti-align-justify"></i>
+                    </a>
+                    <a class="pull-right menu-toggler visible-xs-block" id="menu-toggler" data-toggle="collapse" href=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="ti-view-grid"></i>
+                    </a>
+                </div>
+                <!-- end: NAVBAR HEADER -->
+                <!-- start: NAVBAR COLLAPSE -->
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-right">
+                        <!-- start: MESSAGES DROPDOWN -->
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="dot-badge partition-red"></span> <i class="ti-comment"></i> <span>MESSAGES</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-light dropdown-messages dropdown-large">
+                                <li>
+                                    <span class="dropdown-header"> Unread messages</span>
+                                </li>
+                                <li>
+                                    <div class="drop-down-wrapper ps-container">
+                                        <ul>
+                                            <li class="unread">
+                                                <a href="javascript:;" class="unread">
+                                                    <div class="clearfix">
+                                                        <div class="thread-image">
+                                                            <img src="./assets/images/avatar-2.jpg" alt="">
+                                                            <img src="~/images/avatar-1.jpg" alt="" />
+                                                        </div>
+                                                        <div class="thread-content">
+                                                            <span class="author">Nicole Bell</span>
+                                                            <span class="preview">Duis mollis, est non commodo luctus, nisi erat porttitor ligula...</span>
+                                                            <span class="time"> Just Now</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;" class="unread">
+                                                    <div class="clearfix">
+                                                        <div class="thread-image">
+                                                            <img src="./assets/images/avatar-3.jpg" alt="">
+                                                        </div>
+                                                        <div class="thread-content">
+                                                            <span class="author">Steven Thompson</span>
+                                                            <span class="preview">Duis mollis, est non commodo luctus, nisi erat porttitor ligula...</span>
+                                                            <span class="time">8 hrs</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">
+                                                    <div class="clearfix">
+                                                        <div class="thread-image">
+                                                            <img src="./assets/images/avatar-5.jpg" alt="">
+                                                        </div>
+                                                        <div class="thread-content">
+                                                            <span class="author">Kenneth Ross</span>
+                                                            <span class="preview">Duis mollis, est non commodo luctus, nisi erat porttitor ligula...</span>
+                                                            <span class="time">14 hrs</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="view-all">
+                                    <a href="#">
+                                        See All
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- end: MESSAGES DROPDOWN -->
+                        <!-- start: ACTIVITIES DROPDOWN -->
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="ti-check-box"></i> <span>ACTIVITIES</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-light dropdown-messages dropdown-large">
+                                <li>
+                                    <span class="dropdown-header"> You have new notifications</span>
+                                </li>
+                                <li>
+                                    <div class="drop-down-wrapper ps-container">
+                                        <div class="list-group no-margin">
+                                            <a class="media list-group-item" href="">
+                                                <img class="img-circle" alt="..." src="assets/images/avatar-1.jpg">
+                                                <span class="media-body block no-margin"> Use awesome animate.css <small class="block text-grey">10 minutes ago</small> </span>
+                                            </a>
+                                            <a class="media list-group-item" href="">
+                                                <span class="media-body block no-margin"> 1.0 initial released <small class="block text-grey">1 hour ago</small> </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="view-all">
+                                    <a href="#">
+                                        See All
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- end: ACTIVITIES DROPDOWN -->
+                        <!-- start: LANGUAGE SWITCHER -->
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="ti-world"></i> English
+                            </a>
+                            <ul role="menu" class="dropdown-menu dropdown-light fadeInUpShort">
+                                <li>
+                                    <a href="#" class="menu-toggler">
+                                        Deutsch
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="menu-toggler">
+                                        English
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="menu-toggler">
+                                        Italiano
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- start: LANGUAGE SWITCHER -->
+                        <!-- start: USER OPTIONS DROPDOWN -->
+                        <li class="dropdown current-user">
+                            <a class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="~/images/avatar-1.jpg" alt="Peter"> <span class="username">Peter <i class="ti-angle-down"></i></span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-dark">
+                                <li>
+                                    <a href="pages_user_profile.html">
+                                        My Profile
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="pages_calendar.html">
+                                        My Calendar
+                                    </a>
+                                </li>
+                                <li>
+                                    <a hef="pages_messages.html">
+                                        My Messages (3)
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="login_lockscreen.html">
+                                        Lock Screen
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="login_signin.html">
+                                        Log Out
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- end: USER OPTIONS DROPDOWN -->
+                    </ul>
+                    <!-- start: MENU TOGGLER FOR MOBILE DEVICES -->
+                    <div class="close-handle visible-xs-block menu-toggler" data-toggle="collapse" href=".navbar-collapse">
+                        <div class="arrow-left"></div>
+                        <div class="arrow-right"></div>
+                    </div>
+                    <!-- end: MENU TOGGLER FOR MOBILE DEVICES -->
+                </div>
+                <!-- end: NAVBAR COLLAPSE -->
+            </header>
+            <!-- end: TOP NAVBAR -->
+            <div class="main-content">
+                <div class="wrap-content container" id="container">
+                    <!-- start: DASHBOARD TITLE -->
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+        <!-- start: FOOTER -->
+        <footer>
+            <div class="footer-inner">
+                <div class="pull-left">
+                    &copy; <span class="current-year"></span><span class="text-bold text-uppercase"> Feedback Solution</span>. <span>All rights reserved</span>
+                </div>
+                <div class="pull-right">
+                    <span class="go-top"><i class="ti-angle-up"></i></span>
+                </div>
+            </div>
+        </footer>
+        <!-- end: FOOTER -->
+    </div>
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        <!-- start: MAIN JAVASCRIPTS -->
+        <script src="~/js/jquery.min.js"></script>
+        <script src="~/js/Bootstrap/bootstrap.min.js"></script>
+        <!-- end: MAIN JAVASCRIPTS -->
+        <script src="~/js/main.js"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+        
+    </environment>
+    <script>
+        jQuery(document).ready(function () {
+            Main.init();
+        });
+    </script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
